@@ -55,7 +55,7 @@
                 <!-- Arbejde Section -->
                 <div class="col-md-6">
                     <h2 class="mb-6">Tidligere Arbejde</h2>
-                    <div class="card mb-auto">
+                    <div class="card mb-auto rounded-3">
                         <div class="card-body">
                             <h5 class="card-title">Lastbil Chauffør</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Hørkram & Danske Fragtmænd | Juni 2021 - December
@@ -70,9 +70,9 @@
                 <!-- </section>  -->
                 <!-- Education Section -->
 
-                <div class="col-md-6">
+                <div class="col-md-6 pt-md-0 pt-3">
                     <h2 class="mb-6">Uddannelse</h2>
-                    <div class="card mb-auto">
+                    <div class="card mb-auto rounded-3">
                         <div class="card-body">
                             <h5 class="card-title">Datatekniker Med Speciale I Programmering</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Aarhus Tech | Januar 2024 -> Nu</h6>
@@ -85,8 +85,8 @@
 
 
                 <!-- Skills Section </section>-->
-                <div class="container">
-                    <hr class=" border border-primary">
+                <div class="container pb-4" >
+                    <hr class=" border border-primary rounded-3">
                     <div class="row">
                         <h2 class="mb-4">Certificeringer & Færdigheder</h2>
                         <div class="col-md-6">
@@ -102,33 +102,47 @@
         </div>
 
         <!-- Form -->
-        <div class="container ">
+        <div class="container rounded-top-5 bg-primary-subtle ">
 
-            <hr class="border border-primary">
-            <div class="bg-primary-subtle rounded-top-4 mb-3 pt-4 pb-0 px-4">
-                <h2 class="mb-0">Send mig en email!</h2>
+            <hr class="border opacity-0">
+            <div class="pt-4 pb-0 px-md-5 px-4">
+                <h2 class="mb-1">Send mig en email!</h2>
 
                 <label for="" class="form-label">Navn</label>
-                <input type="text" class="form-control" name="" id="" placeholder="Snurre Snup" />
+                <input type="text" class="form-control" placeholder="Snurre Snup" />
 
                 <div class="mb-3">
                     <label for="" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                        placeholder="abc@mail.com" />
+                    <input type="email" class="form-control" placeholder="abc@mail.com" />
                     <small id="emailHelpId" class="form-text text-muted">Det her fungerer rent faktisk ikke endnu! Send
                         mig
-                        istedet en email på CharlyLLarsen@gmail.com</small>
+                        istedet en email på CharlyLLarsen@gmail.com :)</small>
                 </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Besked</label>
+                    
+                        <label for="" class="form-label"></label>
+                        <textarea class="form-control pb-5" name="" id="" rows="3"></textarea>
+                    </div>
+                    <hr>
+ 
+                    <!-- <small id="helpId" class="form-text text-muted">-</small> -->
+                </div>
+
+                <!-- Button -->
                 <div class="text-center pb-3">
                     <a href="#" class="btn btn-primary disabled" role="button">Læs teksten på småt!</a>
                 </div>
+
+                <!-- Captcha -->
                 <div>
-                    <div class="mb-3">
+                    <div class="pb-3">
                         <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
                         <input type="text" class="form-control" id="captcha" placeholder="Your answer">
                     </div>
                     <div class="text-center pb-3">
-                        <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det ud!</button>
+                        <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det
+                            ud!</button>
                     </div>
 
                     <script>
@@ -141,11 +155,11 @@
                             }
                         }
                     </script>
+
+
                 </div>
 
             </div>
-
-        </div>
 
         </div>
 
