@@ -16,26 +16,29 @@
             <div class="container">
                 <a class="navbar-brand" href="#">Home</a>
             </div>
-        </nav> -->
+        </nav>
 
         <!-- Header Section -->
         <div class="">
 
             <!-- <header class="text-bg-primary border-primary-subtle rounded "> -->
 
-            <div class="row text-center m-md-3 mb">
+            <div class="container bg-opacity-50 bg-primary rounded-bottom-5">
+
+                <div class="row text-center pt-2 pt-md-5 pb-md-5">
 
 
-                <div class="col-md-6">
-                    <img src="facePic.png" class="img-fluid">
+                    <div class="col-md-6">
+                        <img src="facePic.png" class="img-fluid">
+                    </div>
+
+
+                    <div class="col-md-6 text-center  m-auto">
+                        <h1 class="fw-bold">Charly Larsen</h1>
+                        <p class="lead">DataTekniker med speciale i programmering</p>
+                    </div>
+
                 </div>
-
-
-                <div class="col-md-6 text-center m-auto mb-auto">
-                    <h1 class="fw-bold">Charly Larsen</h1>
-                    <p class="lead">DataTekniker med speciale i programmering</p>
-                </div>
-
             </div>
             <!-- </header> -->
         </div>
@@ -45,7 +48,7 @@
         <!-- Main Content -->
         <div class="container">
             <!-- Arbejde og uddannelse Sektion -->
-
+            <hr class="border opacity-0">
 
 
             <div class="row">
@@ -57,7 +60,7 @@
                             <h5 class="card-title">Lastbil Chauffør</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Hørkram & Danske Fragtmænd | Juni 2021 - December
                                 2023</h6>
-                            <hr>
+                            <hr class="border border-primary">
                             <p class="card-text">Erfaring: Kunderservice og betjening, levering inden for tid og
                                 koncentration over længere perioder.</p>
                         </div>
@@ -73,7 +76,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Datatekniker Med Speciale I Programmering</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Aarhus Tech | Januar 2024 -> Nu</h6>
-                            <hr>
+                            <hr class="border border-primary">
                             <p class="card-text">C#, SQL, HTML, CSS</p>
                         </div>
                     </div>
@@ -83,7 +86,7 @@
 
                 <!-- Skills Section </section>-->
                 <div class="container">
-                    <hr class border border-primary>
+                    <hr class=" border border-primary">
                     <div class="row">
                         <h2 class="mb-4">Certificeringer & Færdigheder</h2>
                         <div class="col-md-6">
@@ -97,30 +100,54 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Form -->
-        <div class="container">
-            
-            <hr>
-             <div class="mb-3">
-                 <h2 class="mb-0">Send mig en email!</h2>
-                 
-                 <label for="" class="form-label">Email</label>
-                 <input
-                 type="email"
-                 class="form-control"
-                 name=""
-                 id=""
-                 aria-describedby="emailHelpId"
-                 placeholder="abc@mail.com"
-                 />
-                 <small id="emailHelpId" class="form-text text-muted"
-                 >Help text</small
-                 >
+        <div class="container ">
+
+            <hr class="border border-primary">
+            <div class="bg-primary-subtle rounded-top-4 mb-3 pt-4 pb-0 px-4">
+                <h2 class="mb-0">Send mig en email!</h2>
+
+                <label for="" class="form-label">Navn</label>
+                <input type="text" class="form-control" name="" id="" placeholder="Snurre Snup" />
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                        placeholder="abc@mail.com" />
+                    <small id="emailHelpId" class="form-text text-muted">Det her fungerer rent faktisk ikke endnu! Send
+                        mig
+                        istedet en email på CharlyLLarsen@gmail.com</small>
                 </div>
-                
+                <div class="text-center pb-3">
+                    <a href="#" class="btn btn-primary disabled" role="button">Læs teksten på småt!</a>
+                </div>
+                <div>
+                    <div class="mb-3">
+                        <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
+                        <input type="text" class="form-control" id="captcha" placeholder="Your answer">
+                    </div>
+                    <div class="text-center pb-3">
+                        <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det ud!</button>
+                    </div>
+
+                    <script>
+                        function validateCaptcha() {
+                            const captchaInput = document.getElementById('captcha').value;
+                            if (captchaInput == '4') {
+                                alert('Jada godt gået!');
+                            } else {
+                                alert('Nej det var forkert :(');
+                            }
+                        }
+                    </script>
+                </div>
+
             </div>
 
+        </div>
+
+        </div>
 
 
 
@@ -129,8 +156,8 @@
 
 
 
-        <div>                                                       <!-- Footer -->
-           
+        <div class=""> <!-- Footer -->
+
 
             <footer class="bg-dark text-white text-center py-3">
                 <p class="mb-0">CharlyLLarsen@gmail.Com</p>
