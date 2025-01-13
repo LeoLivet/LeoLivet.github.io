@@ -44,6 +44,49 @@
         </div>
 
 
+        <div class="container">
+            
+
+            <div class="accordion accordion" id="Arbejde">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Arbejde">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseArbejde" aria-expanded="true" aria-controls="collapseArbejde">
+                            Tidligere Arbejde
+                        </button>
+                    </h2>
+                    <div id="collapseArbejde" class="accordion-collapse collapse" aria-labelledby="headingArbejde"
+                        data-bs-parent="#Arbejde">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="lastbilChauffør">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-lastbil">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-lastbil"
+                                            aria-expanded="true" aria-controls="flush-lastbil">
+                                            lastbil Chauffør
+                                        </button>
+                                    </h2>
+                                    <div id="flush-lastbil" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-lastbil" data-bs-parent="#lastbilChauffør">
+                                        <div class="accordion-body">
+                                            test
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
 
         <!-- Main Content -->
         <div class="container">
@@ -85,14 +128,14 @@
 
 
                 <!-- Skills Section </section>-->
-                <div class="container pb-4" >
+                <div class="container pb-4">
                     <hr class=" border border-primary rounded-3">
                     <div class="row">
                         <h2 class="mb-4">Certificeringer & Færdigheder</h2>
                         <div class="col-md-6">
                             <ul class="list-group">
                                 <li class="list-group-item">C#</li>
-                                <li class="list-group-item"><del>HTML & CSS</del></li>
+                                <li class="list-group-item">HTML & CSS</li>
                                 <!-- <li class="list-group-item"></li> -->
                             </ul>
                         </div>
@@ -120,46 +163,46 @@
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Besked</label>
-                    
-                        <label for="" class="form-label"></label>
-                        <textarea class="form-control pb-5" name="" id="" rows="3"></textarea>
-                    </div>
-                    <hr>
- 
-                    <!-- <small id="helpId" class="form-text text-muted">-</small> -->
-                </div>
 
-                <!-- Button -->
+                    <label for="" class="form-label"></label>
+                    <textarea class="form-control pb-5" name="" id="" rows="3"></textarea>
+                </div>
+                <hr>
+
+                <!-- <small id="helpId" class="form-text text-muted">-</small> -->
+            </div>
+
+            <!-- Button -->
+            <div class="text-center pb-3">
+                <a href="#" class="btn btn-primary disabled" role="button">Læs teksten på småt!</a>
+            </div>
+
+            <!-- Captcha -->
+            <div>
+                <div class="pb-3">
+                    <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
+                    <input type="text" class="form-control" id="captcha" placeholder="Dit gode gæt">
+                </div>
                 <div class="text-center pb-3">
-                    <a href="#" class="btn btn-primary disabled" role="button">Læs teksten på småt!</a>
+                    <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det
+                        ud!</button>
                 </div>
 
-                <!-- Captcha -->
-                <div>
-                    <div class="pb-3">
-                        <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
-                        <input type="text" class="form-control" id="captcha" placeholder="Dit gode gæt">
-                    </div>
-                    <div class="text-center pb-3">
-                        <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det
-                            ud!</button>
-                    </div>
-
-                    <script>
-                        function validateCaptcha() {
-                            const captchaInput = document.getElementById('captcha').value;
-                            if (captchaInput == '4') {
-                                alert('Jada godt gået!');
-                            } else {
-                                alert('Nej det var forkert :(');
-                            }
+                <script>
+                    function validateCaptcha() {
+                        const captchaInput = document.getElementById('captcha').value;
+                        if (captchaInput == '4') {
+                            alert('Jada godt gået!');
+                        } else {
+                            alert('Nej det var forkert :(');
                         }
-                    </script>
+                    }
+                </script>
 
-
-                </div>
 
             </div>
+
+        </div>
 
         </div>
 
