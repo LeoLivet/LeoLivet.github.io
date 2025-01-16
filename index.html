@@ -57,14 +57,14 @@
                 <div class="accordion-body">
                     <div class="card">
                         <div class="card-body">
-                            Hø
+                            1
                         </div>
                         <div class="card-body">
-                            høhø
+                            2
                         </div>
                     </div>
 
-                    <strong>This is the first items accordion body.</strong> mere tekst efter strong tag her
+                    <strong>Strong</strong> mere tekst efter strong tag her
                 </div>
             </div>
         </div>
@@ -129,60 +129,77 @@
         </div>
     </div>
 
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="0366f554-c6a8-42e1-b6c6-f019d22a7283">
+    
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit Form</button>
+    
+    </form>
+
+
     <!-- Form -->
     <div class="container rounded-top-5 bg-primary-subtle ">
 
         <hr class="border opacity-0">
         <div class="pt-4 pb-0 px-md-5 px-4">
             <h2 class="mb-1">Send mig en email!</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0366f554-c6a8-42e1-b6c6-f019d22a7283">
 
-            <label for="" class="form-label">Navn</label>
-            <input type="text" class="form-control" placeholder="Snurre Snup" />
-
-            <div class="mb-3">
-                <label for="" class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="abc@mail.com" />
-                <small id="emailHelpId" class="form-text text-muted">Det her fungerer rent faktisk ikke endnu! Send mig
-                    istedet en email på CharlyLLarsen@gmail.com :)</small>
+                <label for="name" class="form-label">Navn</label>
+                <input type="text" name="name" id="name"class="form-control" placeholder="Snurre Snup" required/>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label" >Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="FanAf@gulerodder.dk" required />
+                    <!-- <small id="emailHelpId" class="form-text text-muted"></small> -->
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Besked</label>
+                    
+                    
+                    <label for="" class="form-label"></label>
+                    <textarea class="form-control pb-5" name="message" id="message" placeholder="Hva' så fessor?" rows="3" required></textarea>
+                </div>
+                <hr>
+                
+                <!-- <small id="helpId" class="form-text text-muted">-</small> -->
             </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Besked</label>
-
-                <label for="" class="form-label"></label>
-                <textarea class="form-control pb-5" name="" id="" rows="3"></textarea>
-            </div>
-            <hr>
-
-            <!-- <small id="helpId" class="form-text text-muted">-</small> -->
-        </div>
-
-        <!-- Button -->
-        <div class="text-center pb-3">
-            <a href="#" class="btn btn-primary disabled" role="button">Læs teksten på småt!</a>
-        </div>
-
-        <!-- Captcha -->
-        <div>
-            <div class="pb-3">
-                <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
-                <input type="text" class="form-control" id="captcha" placeholder="Dit gode gæt">
-            </div>
+            
+            <!-- Button -->
             <div class="text-center pb-3">
-                <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det
-                    ud!</button>
+                <button class="btn btn-primary">Send</button>
             </div>
+            
+            <!-- Captcha -->
+            <div>
+                <div class="pb-3">
+                    <label for="captcha" class="form-label">Hvad er 2 + 2?</label>
+                    <input type="text" class="form-control" id="captcha" placeholder="Dit gode gæt">
+                </div>
+                <div class="text-center pb-3">
+                    <button id="submitBtn" class="btn btn-primary" onclick="validateCaptcha()">Jeg har regnet det
+                        ud!</button>
+                    </div>
+                    
+                    <script>
+                        function validateCaptcha() {
+                            const captchaInput = document.getElementById('captcha').value;
+                            if (captchaInput == '4') {
+                                alert('Jada godt gået!');
 
-            <script>
-                function validateCaptcha() {
-                    const captchaInput = document.getElementById('captcha').value;
-                    if (captchaInput == '4') {
-                        alert('Jada godt gået!');
-                    } else {
-                        alert('Nej det var forkert :(');
-                    }
-                }
-            </script>
+                            } else {
+                                alert('Nej det var forkert :(');
+                            }
+                        }
+                        </script>
         </div>
+    </form>
     </div>
 
 
